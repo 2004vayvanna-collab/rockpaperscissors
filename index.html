@@ -4,19 +4,36 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rock Paper Scissors</title>
+    <title>Rock Paper Scissors with UI</title>
     <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
-    <div class="flex-container">
-      <h1>Rock Paper Scissors</h1>
-      <button onclick="game()">Start Game</button>
-      <p>
-        This game is played in the console. On Windows/Linux press CTRL Shift J
-        to open the console. On mac, press Option J to open the console
-      </p>
+    <div class="score">
+        <div class="ties">Ties:0</div>
     </div>
+    <div class="winnerdiv">
+      <h1 class="winner"></h1>
+      <button class="reset"onclick="restartGame">play again</button>
+    </div>
+    <div class="playerSection">
+       <h3 class="playerChoice"></h3>
+       <h3 class="playerScore">score:0</h3>
+       <div class="playerImgs">
+        <img src="./images/rock.jpg" alt="rock" class="pImg" id="rock">
+        <img src="./images/paper.jpg" alt="paper" class="pImg" id="paper">
+        <img src="./images/scissors.jpg" alt="scissors" class="pImg" id="rock">
+       </div>
+    </div>
+       <div class="computerSection">
+       <h3 class="computerChoice"></h3>
+       <h3 class="computerScore">score:0</h3>
+       <div class="computerImgs">
+        <img src="./images/rock.jpg" alt="rock" class="pImg" id="rock">
+        <img src="./images/paper.jpg" alt="paper" class="pImg" id="paper">
+        <img src="./images/scissors.jpg" alt="scissors" class="pImg" id="rock">
+       </div>
+    </div>  
   </body>
   <script src="script.js"></script>
 </html>
